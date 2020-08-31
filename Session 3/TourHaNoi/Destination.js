@@ -16,7 +16,7 @@
         return`
         Chào mừng các nà ní đến với danh thắng: ${this.name},
         Ảnh ọt mỹ lệ: ${this.images},
-        Thời gian cập nhật: ${this.dateModifiled}
+        Thời gian cập nhật: ${this.dateModified}
         `
     }
 }
