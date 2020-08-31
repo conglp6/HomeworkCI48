@@ -43,17 +43,17 @@ class DestinationsList {
 let newDestinationsList = new DestinationsList();
 //thêm Museum
 let museumHn = new Museum("Bảo tàng Hà Nội", 300000);
-museumHn.img = "https://upload.wikimedia.org/wikipedia/commons/2/22/Hanoi_Museum.jpg";
+museumHn.newImage = "https://upload.wikimedia.org/wikipedia/commons/2/22/Hanoi_Museum.jpg";
 museumHn.info;
 newDestinationsList.newDestination = museumHn;
 // thêm Park
 let parkHn = new Park("Công viên Cầu Giấy - Hà Nội", 100000);
-parkHn.img = "https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/09/Cong-vien-Cau-Giay-1-e1505889806491.jpg";
+parkHn.newImage = "https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/09/Cong-vien-Cau-Giay-1-e1505889806491.jpg";
 parkHn.info;
 newDestinationsList.newDestination = parkHn;
 // thêm Restaurant
 let restaurantHn = new Restaurant("Buffet Hà Nội", 800000)
-restaurantHn.img = "https://www.butterfield.com/blog/wp-content/uploads/2015/07/Hanoi-Restaurants-FB.jpg";
+restaurantHn.newImage = "https://www.butterfield.com/blog/wp-content/uploads/2015/07/Hanoi-Restaurants-FB.jpg";
 restaurantHn.info;
 newDestinationsList.newDestination = restaurantHn;
 
