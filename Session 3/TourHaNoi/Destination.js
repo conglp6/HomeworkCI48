@@ -1,7 +1,7 @@
  export class Destination{
     name;
     images = [];
-    dateModifiled;
+    dateModified;
 
     constructor(name){
         this.name = name;
