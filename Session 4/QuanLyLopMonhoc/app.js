@@ -17,5 +17,5 @@ class1.addStudent(student3);
 
 console.log(class1);
 
-class1.findStudent('Công');
+class1.findStudent("Công");
 class1.studentPoint(6);

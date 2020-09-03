@@ -31,17 +31,15 @@ export class Class {
     }
 
     findStudent(name) {
-        return this.students.filter(function (x) {
+        console.log(this.students.filter(function (x) {
             return x.name == name;
-        });
+        }));
     }
-    
+
     studentPoint(point) {
-        for (let student of this.students) {
-            if (student.point > point) {
-                console.log(student);
-            }
-        }
+        console.log(this.students.filter(function (y) {
+            return y.point > point;
+        }));
     }
 
 }
