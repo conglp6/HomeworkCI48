@@ -1,25 +1,21 @@
 import { Teacher } from './Teacher.js'
 import { Student } from './Student.js'
 
-export class Class {
+export class Group {
     idClass;
     subject;
-    teachers = [];
+    teacher;
     students = [];
 
     constructor(idClass, subject) {
         this.idClass = idClass;
         this.subject = subject;
-        this.teachers = [];
-        this.students = [];
     }
 
-    addTeacher(teacher) {
+    set newTeacher(teacher) {
         if (teacher instanceof Teacher) {
-            this.teachers.push(teacher);
-        } else {
-            console.log('ko thêm được');
-        };
+            this.teacher = teacher;
+        }
     }
 
     addStudent(student) {
