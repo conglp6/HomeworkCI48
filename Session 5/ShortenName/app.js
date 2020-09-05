@@ -1,8 +1,10 @@
 function yes() {
     let name = document.getElementById("fname").value;
-    // Chuyển tên về viết thường 
-    let nameLow = name.toLowerCase();
-    // Tách dấu cách khỏi string và chuyển vể array
+    // Remove whitespace from both sides of name:
+    nameNo = name.trim();
+    // Chuyển name về viết thường 
+    let nameLow = nameNo.toLowerCase();
+    // Xoá hết whitespace trong name và chuyển name vể array
     let arr = nameLow.split(" ");
     // Lấy phần FirstName của ShortenName
     let arrFirst = arr[0];
@@ -57,10 +59,10 @@ function yes() {
     let shortenName = shortenFirst.concat(shortenLast);
     let string = shortenName.join('');
 
-    console.log(string);
-
+    
     // Viết hoa chữ đầu của ShortenName
     let shortenNameU = string.charAt(0).toUpperCase() + string.slice(1)
+    console.log(shortenNameU);
     // alert ('Mật Danh rút gọn của Ngài là: ' + shortenNameU);
     document.getElementById('sname').innerHTML = shortenNameU;
 
