@@ -11,7 +11,7 @@ function yes() {
     let arrFirstSplit = arr[0].split("");
     console.log(arrFirstSplit);
 
-    // Tạo mảng để chứa LastName của ShortenName
+    // Tạo mảng để chứa FirstName của ShortenName
     let shortenFirst = [];
 
     // Mảng chứa các ký tự nguyên âm
