@@ -18,10 +18,10 @@ function formSubmit(e) {
     //Show Alert Message
     document.querySelector('.alert').style.display = 'block';
 
-    //Hide Alert Message After Five Seconds
+    //Hide Alert Message After 3 Seconds
     setTimeout(function () {
         document.querySelector('.alert').style.display = 'none';
-    }, 5000);
+    }, 3000);
 
     // Reset Registrationform
     document.getElementById('registrationform').reset();
