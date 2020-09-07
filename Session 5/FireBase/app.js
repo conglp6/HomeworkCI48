@@ -18,7 +18,7 @@ function formSubmit(e) {
     //Show Alert Message(5)
     document.querySelector('.alert').style.display = 'block';
 
-    //Hide Alert Message After Seven Seconds(6)
+    //Hide Alert Message After Five Seconds(6)
     setTimeout(function () {
         document.querySelector('.alert').style.display = 'none';
     }, 5000);
