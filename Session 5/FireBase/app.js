@@ -62,11 +62,13 @@ async function update() {
 }
 
 // Xoá các bản ghi có tên lastName trùng nhau
-// Cách làm: tạo 1 mảng chứa các lastName trùng nhau, sau đó truy xuất lại firebase và xoá.
+/*Cách làm: tạo 1 mảng chứa các lastName trùng nhau, sau đó tiến hành xoá tất cả các bản ghi
+có lastName == các phần tử của mảng*/
 
 async function deleteData() {
     let result = await fBase.get();
-    let arrDel = []; // mảng chứa các lastName trung nhau
+    console.log(result);
+    let arrDel = []; // mảng chứa các lastName trùng nhau
 
     for (let i = 0; i < result.docs.length; i++) {
         for (let j = i + 1; j < result.docs.length; j++) {
