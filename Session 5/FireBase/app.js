@@ -15,6 +15,14 @@ function formSubmit(e) {
     //addData values
     addData(fName, lName, email, phone);
 
+    //Show Alert Message(5)
+    document.querySelector('.alert').style.display = 'block';
+
+    //Hide Alert Message After Seven Seconds(6)
+    setTimeout(function () {
+        document.querySelector('.alert').style.display = 'none';
+    }, 5000);
+
     // Reset Registrationform
     document.getElementById('registrationform').reset();
 }
