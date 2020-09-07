@@ -15,10 +15,10 @@ function formSubmit(e) {
     //addData values
     addData(fName, lName, email, phone);
 
-    //Show Alert Message(5)
+    //Show Alert Message
     document.querySelector('.alert').style.display = 'block';
 
-    //Hide Alert Message After Five Seconds(6)
+    //Hide Alert Message After Five Seconds
     setTimeout(function () {
         document.querySelector('.alert').style.display = 'none';
     }, 5000);
