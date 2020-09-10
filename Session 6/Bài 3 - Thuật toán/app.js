@@ -8,17 +8,17 @@ function yes() {
             alert('Nhập lại mảng, mảng phải gồm những số nguyên');
         } else if (isNaN(a[i]) == false && Number.isInteger(a[i]) == true &&
             isNaN(k) == false && Number.isInteger(k) == true && k > 0) {
-            for (let i = 0; i < a.length; i++) {
-                for (let j = i + 1; j < a.length; j++) {
-                    let outPut = "";
-                    if ((a[i] + a[j]) % k === 0) {
 
-                        outPut = `(${i}, ${j}) `;
-                        console.log(outPut);
-                        document.getElementsByClassName("lp lp--out")[0].innerHTML = "Output: " + outPut;
-                    }
+            for (let j = i + 1; j < a.length; j++) {
+                let outPut = "";
+                if ((a[i] + a[j]) % k === 0) {
+
+                    outPut = `(${i}, ${j}) `;
+                    console.log(outPut);
+                    document.getElementsByClassName("lp lp--out")[0].innerHTML = "Output: " + outPut;
                 }
             }
+
         }
     }
     if (isNaN(k) == true || Number.isInteger(k) == false || k < 0) {
