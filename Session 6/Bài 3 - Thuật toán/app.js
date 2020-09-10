@@ -13,9 +13,9 @@ function yes() {
                 let outPut = "";
                 if ((a[i] + a[j]) % k === 0) {
 
-                    outPut = `(${i}, ${j}) `;
+                    outPut += `(${i}, ${j}) `;
                     console.log(outPut);
-                    document.getElementsByClassName("lp lp--out")[0].innerHTML = "Output: " + outPut;
+                    document.write(outPut);
                 }
             }
 
