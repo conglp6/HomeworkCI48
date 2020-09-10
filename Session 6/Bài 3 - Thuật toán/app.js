@@ -2,6 +2,8 @@ function yes() {
     let a = (((document.getElementsByClassName("lp lp--input")[0].value).trim()).split(" ")).map(function (x) { return parseFloat(x) });
     console.log(a);
     let k = parseFloat(document.getElementsByClassName("lp lp--k")[0].value);
+    
+    let outPut = "";
 
     for (let i = 0; i < a.length; i++) {
         if (isNaN(a[i]) == true || Number.isInteger(a[i]) == false) {
@@ -10,12 +12,12 @@ function yes() {
             isNaN(k) == false && Number.isInteger(k) == true && k > 0) {
 
             for (let j = i + 1; j < a.length; j++) {
-                let outPut = "";
                 if ((a[i] + a[j]) % k === 0) {
 
                     outPut += `(${i}, ${j}) `;
                     console.log(outPut);
-                    document.write(outPut);
+                    // document.write(outPut);
+                    document.getElementById('outPut').innerHTML = outPut;
                 }
             }
 
