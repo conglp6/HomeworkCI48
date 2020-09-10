@@ -1,0 +1,56 @@
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.form-group > .form-control {
+    width: 220px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    background: #FF723F;
+    color: #ffffff;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+.meme {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.meme >div, .meme>img {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    background: #f78c6c;
+    color: #ffffff;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+div > #name {
+    background-color: royalblue;
+}
+div > #datemodified {
+    background-color: #949598;
+}
+
+#btn-edit {
+    width: 100px;
+    background-color:  #f78c6c ;
+}
+
+#btn-delete {
+    width: 100px;
+    background-color: #f78c56;
+}

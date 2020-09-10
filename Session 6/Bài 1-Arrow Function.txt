@@ -1,0 +1,58 @@
+Arrow Functions - một tính năng mới được giới thiệu trong ES6 - cho phép viết các hàm súc tích trong JavaScript. 
+Mặc dù cả Regular Functions và Arrow Functions hoạt động theo cách giống nhau, nhưng có một số khác biệt thú vị nhất định giữa chúng.
+
+1. Syntax
+-Syntax của một fuction bình thuờng:
+
+let x = function function_name(parameters){ 
+   // body of the function 
+}; 
+Ví dụ:
+
+let square = function(x){ 
+  return (x*x); 
+}; 
+console.log(square(9)); 
+Kết quả: 81
+
+-Syntax của arrow functions:-
+
+let x = (parameters) => { 
+    // body of the function 
+}; 
+Ví dụ:
+
+var square = (x) => { 
+    return (x*x); 
+}; 
+console.log(square(9)); 
+Kết quả: 81
+
+2. Từ khóa this
+Không giống như function bình thuờng, arrow functions sẽ không có this của nó. 
+Hãy xem qua các ví dụ bên dưới để hiểu hơn.
+
+Ví dụ:
+
+let user = { 
+    name: "GFG", 
+    gfg1:() => { 
+        console.log(this.name)
+        console.log("hello " + this.name); // no 'this' binding here 
+    }, 
+    gfg2(){        
+        console.log("Welcome to " + this.name); // 'this' binding works here 
+    }   
+ }; 
+user.gfg1(); 
+user.gfg2(); 
+Kết quả: hello
+         Welcome to GFG
+Ở đây gfg1được khai báo là một array fucntion nên cái this của nó không nằm ở user nữa mà nó là một cái gì đó ở ngoài user, có thể là window, document... 
+Ngược lại thì gfg2 là một regular function nên this.name, nó sẽ hiểu là user.name, nên nó sẽ lấy giá trị của user.name
+
+3. Sử dụng từ khóa new
+Regular functions được tạo bằng cách sử dụng khai báo hàm hoặc biểu thức là constructible và callable. 
+Vì regular function có thể constructible, chúng có thể được gọi bằng cách sử dụng từ khóa new. 
+Tuy nhiên, arrow function thì chỉ là callable và không constructible. 
+Do đó, chúng ta sẽ gặp lỗi khi cố gắng gọi arrow function bằng từ khóa new.
