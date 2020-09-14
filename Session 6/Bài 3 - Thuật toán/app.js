@@ -2,7 +2,7 @@ function yes() {
     let a = (((document.getElementsByClassName("lp lp--input")[0].value).trim()).split(" ")).map(function (x) { return parseFloat(x) });
     console.log(a);
     let k = parseFloat(document.getElementsByClassName("lp lp--k")[0].value);
-    
+
     let outPut = "";
 
     for (let i = 0; i < a.length; i++) {
@@ -16,7 +16,6 @@ function yes() {
 
                     outPut += `(${i}, ${j}) `;
                     console.log(outPut);
-                    // document.write(outPut);
                     document.getElementById('outPut').innerHTML = outPut;
                 }
             }
